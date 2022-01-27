@@ -5,12 +5,14 @@
 </template>
 
 <script lang="ts">
-import { setToken, removeToken } from "@/utils/auth";
 export default {
   name: "app",
   created(): void {
-    console.log(setToken("xxx"));
-    console.log(removeToken());
+    console.log(this.$refs);
+    console.log(this.$api);
+    console.log(this.$enums);
+    console.log(this.$labels);
+    console.log(this);
   },
 };
 </script>
