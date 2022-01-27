@@ -4,9 +4,14 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { setToken, removeToken } from "@/utils/auth";
 export default {
   name: "app",
+  created(): void {
+    console.log(setToken("xxx"));
+    console.log(removeToken());
+  },
 };
 </script>
 

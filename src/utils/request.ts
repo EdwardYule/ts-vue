@@ -43,7 +43,7 @@ service.interceptors.response.use(
    * Here is just an example
    * You can also judge the status by HTTP Status Code
    */
-   response => {
+  response => {
     const res = response.data
 
     // if the custom code is not 20000, it is judged as an error.
